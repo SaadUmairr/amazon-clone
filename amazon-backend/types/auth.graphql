@@ -1,0 +1,17 @@
+type User {
+    serial: Int
+    id: String
+    firstName: String
+    lastName: String
+    email: String
+    gender: String
+    phone: String
+    password: String
+    permissions: String
+}
+type Mutation {
+    login(email: String!, password: String!): String!
+}
+type Query {
+    getUserDetails: String
+}
